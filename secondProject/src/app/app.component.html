@@ -1,0 +1,18 @@
+<h2>Class Binding Example</h2>
+
+<h4 class="textcolorOne">Text color one using class buinding</h4>
+<h4 [class]="textcolor2">Text color two using attribute buinding </h4><br>
+
+<h2>Property Binding Example</h2>
+
+<button [disabled]="buttonDisabled">ButtonDisabled</button><br/><br/>
+UserName:<input type="text" name="textone" [disabled]="isDisable" />
+
+<!--By default input disable willl be false state-->
+Name : <input type="text" name="texttwo" />
+
+
+<h2>Two way Binding Example</h2>
+
+UserName :<input type="text" [(ngModel)]="UserName" /><br/>
+{{UserName}}
